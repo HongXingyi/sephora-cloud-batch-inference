@@ -80,6 +80,19 @@ matching the version used to serialize the model.
 5. Run the notebook, or trigger its associated Databricks Job
    using the Run now button.
 6. Inspect the execution results and generated prediction CSV.
+### Reproducibility Notes
+
+This repository documents the cloud deployment workflow developed for the Sephora SkinSight academic project.
+
+The deployment notebook, Python dependencies, architecture diagram and validation evidence are provided.
+
+The trained model artifact (`product_tfidf_LinearSVM.joblib`), batch input dataset (`sephora_batch_input_fixed.csv`) and local reference predictions (`sephora_expected_predictions.csv`) are maintained separately and are not currently included in this public repository.
+
+To reproduce the inference workflow, these files must be made available in the configured execution directory, with the required input schema and compatible Python dependencies.
+
+The Databricks Job was successfully executed using the project environment. The validation results reported here are based on 100 randomly sampled held-out reviews (random seed = 22).
+
+This repository documents a working cloud inference prototype; it is not a standalone, production-ready deployment.
 
 ## 8. Deployment Validation
 

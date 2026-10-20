@@ -50,6 +50,9 @@ The model uses SVM decision scores rather than probabilities.
 
 The workflow runs on Databricks Serverless compute.
 
+### Cloud Inference Architecture
+![Cloud Deployment Architecture](screenshots/deployment_architecture.png)
+
 ## 5. Environment
 
 Python: 3.12.3
@@ -95,6 +98,15 @@ The Databricks Job completed successfully.
 
 Label agreement measures consistency between cloud and local
 predictions; it does not represent classification accuracy.
+
+### Successful Cloud Job Execution
+![Databricks Job Succeeded](screenshots/job_succeeded.png)
+
+### Batch Inference Results
+![Batch Inference Output](screenshots/Batch%20Inference%20Output.png)
+
+### Cloud vs Local Validation
+![Cloud vs Local Validation](screenshots/Cloud%20vs%20Local%20Validation.png)
 
 ## 9. Limitations and Future Improvements
 
